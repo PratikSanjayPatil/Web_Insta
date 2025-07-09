@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/newPost.css">
+    <title>Create Post</title>
+</head>
+<body>
+    <div id="container">
+        <div class="createPost">
+            <h1>Create a new post</h1>
+            <form method="post" action="http://localhost:8080/posts" >
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+                <br>
+                <label for="img">Link:</label>
+                <input type="text" name="img" id="img" required>
+                <br>
+                <label for="caption">Caption:</label>
+                <textarea name="caption" id="caption" rows="4" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
