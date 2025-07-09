@@ -29,7 +29,7 @@ let posts = [
 ];
 
 
-app.get("/posts",(req,res)=>{
+app.get("/",(req,res)=>{
     res.render("index.ejs", { posts });
 })
 
@@ -42,7 +42,7 @@ app.post("/posts",(req,res)=>{
     let id = uuidv4(); // Generate a unique ID
     let newPost = { id, username, caption, img };
     posts.push(newPost);
-    res.redirect("/posts");
+    res.redirect("/");
 })
 
 app.get("/posts/:id", (req, res) => {
@@ -54,7 +54,7 @@ app.get("/posts/:id", (req, res) => {
 app.delete("/posts/:id", (req, res) => {
     let {id} = req.params;
     posts = posts.filter((p) => p.id !== id);
-    res.redirect("/posts");
+    res.redirect("/");
 })
 
 app.listen(port, ()=>{
