@@ -10,7 +10,7 @@
     <div id="container">
         <div class="nav">
             <h1>PicFlow</h1>
-            <a href="http://localhost:8080/posts/new">Create Post</a>
+            <a href="/posts/new">Create Post</a>
         </div>
         <div class="posts">
             <% for(post of posts) { %>
@@ -19,8 +19,8 @@
                     <img src="<%= post.img %>" alt="">
                     <p>Caption: <%= post.caption %></p>
                     <div class="btn">
-                        <a style="background-color:aliceblue" href="http://localhost:8080/posts/<%= post.id %>">View Post</a>
-                        <form method="post" action="http://localhost:8080/posts/<%= post.id %>?_method=DELETE">
+                        <a style="background-color:aliceblue" href="/posts/<%= post.id %>">View Post</a>
+                        <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
                             <button type="submit">Delete</button>
                         </form>
                     </div>
