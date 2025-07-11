@@ -57,6 +57,29 @@ app.delete("/posts/:id", (req, res) => {
     res.redirect("/");
 })
 
+app.get("/posts/:id/edit", (req, res) => {
+  let { id } = req.params;
+  let post = posts.find((p) => p.id === id);
+  if (!post) {
+    return res.status(404).send("Post not found");
+  } else {
+    res.render("editPost.ejs", { post });
+  }
+});
+
+app.patch("/posts/:id", (req, res) => {
+    let { id } = req.params;
+    let { username, caption, img } = req.body;
+    let post = posts.find((p) => p.id === id);
+    if (!post) {
+        return res.status(404).send("Post not found");
+    }
+    post.username = username;
+    post.caption = caption;
+    post.img = img;
+    res.redirect("/");
+})
+
 app.listen(port, ()=>{
     console.log("App listen on port: " + port);
 });

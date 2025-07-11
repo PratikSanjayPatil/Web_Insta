@@ -56,7 +56,7 @@ body{
     width: 300px;
 }
 
-.post a,button{
+.btn button, a{
     text-decoration: none;
     color: #000000;
     background-color: #ff0303;
@@ -69,4 +69,19 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name form button{
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    font-weight: 550;
+    border-radius: 1rem;
 }

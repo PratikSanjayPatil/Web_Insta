@@ -15,7 +15,14 @@
         <div class="posts">
             <% for(post of posts) { %>
                 <div class="post">
-                    <h3><%= post.username %></h3>
+                    <div class="name">
+                        <h3>
+                            <%= post.username %>
+                        </h3>
+                        <form action="/posts/<%= post.id %>/edit">
+                            <button type="submit">Edit Post</button>
+                        </form>
+                    </div>
                     <img src="<%= post.img %>" alt="">
                     <p>Caption: <%= post.caption %></p>
                     <div class="btn">
