@@ -18,13 +18,25 @@ let posts = [
     id: uuidv4(),
     username: "John Doe",
     caption: "This is my first post!",
-    img: "https://i.pinimg.com/originals/0e/60/36/0e603631faf49e64b2d4beef52da62c0.jpg",
+    img: "https://cdn.pinno.app/api/internal/cdb/contents/27551e6e-b500-4b95-ba63-e457be8a5666/0/163091",
   },
   {
     id: uuidv4(),
     username: "Jane Smith",
     caption: "Hello, world!",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMadvX1GeM10vYbRJ-TZxL2WeAG_XHWDIJQ&s",
+    img: "https://i.pinimg.com/736x/aa/e8/3c/aae83c886411c0d855ba2538202bb67d.jpg",
+  },
+  {
+    id: uuidv4(),
+    username: "Alice Johnson",
+    caption: "Loving the view!",
+    img: "https://e0.pxfuel.com/wallpapers/243/683/desktop-wallpaper-sarashakeel-on-instagram-beautiful-nature-beautiful-pretty-pinterest-beach.jpg",
+  },
+  {
+    id: uuidv4(),
+    username: "Bob Brown",
+    caption: "Just chilling.",
+    img: "https://i.pinimg.com/736x/10/eb/3a/10eb3a6dbd9e1282551db79b7f6ea258.jpg",
   },
 ];
 
